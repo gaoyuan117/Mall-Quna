@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+
+    >
+
+    <com.android.zcomponent.views.PullToRefreshView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@id/top_title"
+        android:id="@+id/pull_to_refresh_gridview"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both"
+        >
+        <GridView
+            android:id="@+id/easy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            />
+    </com.android.zcomponent.views.PullToRefreshView>
+
+    <include layout="@layout/common_waiting_layout"/>
+
+</RelativeLayout>

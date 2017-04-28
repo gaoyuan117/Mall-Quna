@@ -1,0 +1,68 @@
+<!-- 拍真宝 - 拍卖精选 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/layout_auction_search" />
+    </LinearLayout>
+
+    <com.android.zcomponent.views.pulltorefresh.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/common_pull_refresh_view_show"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_layout"
+        android:orientation="vertical"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/flayout_slider_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_panel_height_middle" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="8dip"
+                android:paddingLeft="8dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text_Title3"
+                    android:text="正在热拍" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/common_listview_show"
+                style="@style/Theme_Scrollbar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/list_line"
+                android:dividerHeight="0.5dip"
+                android:listSelector="#00000000" />
+        </LinearLayout>
+    </com.android.zcomponent.views.pulltorefresh.PullToRefreshScrollView>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_layout"
+        layout="@layout/common_waiting_layout" />
+
+</RelativeLayout>

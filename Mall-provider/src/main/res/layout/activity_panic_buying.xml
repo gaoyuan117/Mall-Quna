@@ -1,0 +1,234 @@
+<!-- 发布到抢购会 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <include
+        android:id="@+id/panic_buying_layout_title"
+        layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/llayout_panic_buying"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/panic_buying_layout_title"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llayout_panic_buying_choose_show_click"
+            style="@style/MyGoodsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/Text_Wrap_Black_Text"
+                android:text="选择商品 " />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/Text_Wrap_Gray_Text"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/common_right_arrow"
+                android:text="全部" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/Text_Wrap_Black_Text"
+                android:text="打折条件  :" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/check_panic_buying_discount_one_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_marginLeft="20dp"
+                    android:text="满 " />
+
+                <EditText
+                    android:id="@+id/edittxt_panic_buying_money_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/border_btn"
+                    android:inputType="numberDecimal"
+                    android:minWidth="60dp"
+                    android:padding="2dp"
+                    android:textCursorDrawable="@drawable/editvew_cursor_drawble" />
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:text="元，打" />
+
+                <TextView
+                    android:id="@+id/edittxt_panic_buying_discount_one_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/border_btn"
+                    android:gravity="center"
+                    android:minWidth="60dp"
+                    android:padding="2dp" />
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:text="折" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <CheckBox
+                    android:id="@+id/check_panic_buying_discount_two_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null" />
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_marginLeft="20dp"
+                    android:text="无底线打" />
+
+                <EditText
+                    android:id="@+id/edittxt_panic_buying_discount_two_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/border_btn"
+                    android:minWidth="60dp"
+                    android:padding="2dp" />
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:text="折" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_panic_buying_start_time_click"
+            style="@style/MyGoodsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Text_Wrap_Black_Text"
+                android:text="抢购时间 " />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/progressbar_categoryz_show"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_marginRight="10dip"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/waiting_progress_bg"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvew_panic_time_show"
+                style="@style/TextView_RightArrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_panic_buying_end_time_click"
+            style="@style/MyGoodsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/Text_Wrap_Black_Text"
+                android:text="结束时间 " />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_right_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gvew_gift_category_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panic_buying_layout_title"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="15dip"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="2dip"
+        android:listSelector="#00000000"
+        android:numColumns="5"
+        android:verticalSpacing="2dip"
+        android:visibility="gone" >
+    </GridView>
+
+    <Button
+        android:id="@+id/btn_panic_buying_join_click"
+        style="@style/Btn_Submit"
+        android:layout_alignParentBottom="true"
+        android:text="申请加入" />
+
+</RelativeLayout>

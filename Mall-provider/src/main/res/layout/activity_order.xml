@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/rlayout_title"
+        layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.android.zcomponent.views.PagerSlidingTabStrip
+            android:id="@+id/order_select_table_titlebar_tabs"
+            android:layout_width="0dp"
+            android:layout_height="45dip"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/llayout_more_order"
+            android:layout_width="75dip"
+            android:layout_height="45dip"
+            android:gravity="center"
+            android:background="@color/gray" >
+
+            <TextView
+                android:id="@+id/tvew_more_order"
+                style="@style/Text_Wrap_Black_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="45dip"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/common_down_arrow"
+                android:text="更多" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpaper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dip" />
+
+</LinearLayout>

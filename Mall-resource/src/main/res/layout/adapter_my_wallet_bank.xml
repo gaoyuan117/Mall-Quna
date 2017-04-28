@@ -1,0 +1,42 @@
+<!-- 提现银行卡列表项 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dip"
+        android:layout_marginTop="1dip"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvew_redraw_bank_name_show"
+                style="@style/Text_Wrap_Black_Text"
+                android:layout_marginLeft="15dip"
+                android:text="中国银行" />
+
+            <TextView
+                android:id="@+id/tvew_redraw_bank_num_show"
+                style="@style/Text_Wrap_Gray_Text"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="5dip"
+                android:text="尾号1234" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvew_redraw_bank_check_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:drawablePadding="8dip"
+            android:drawableRight="@drawable/icon18" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/child_grid_photo_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/child_grid_photo_delete"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/sahnchu"
+        android:layout_toRightOf="@+id/child_grid_photo_image" />
+
+</RelativeLayout>

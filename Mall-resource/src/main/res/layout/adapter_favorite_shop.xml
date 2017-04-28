@@ -1,0 +1,58 @@
+<!-- 收藏店铺列表项 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shop_favorite_item_height"
+        android:background="@drawable/white" >
+
+        <Button
+            android:id="@+id/favorite_del"
+            android:layout_width="50dip"
+            android:layout_height="@dimen/shop_favorite_item_height"
+            android:layout_centerVertical="true"
+            android:background="@color/red"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_text"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgvew_photo_show"
+            android:layout_width="@dimen/image_height_small"
+            android:layout_height="@dimen/image_height_small"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:layout_toRightOf="@+id/favorite_del"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvew_shop_name_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="20dip"
+            android:layout_toLeftOf="@+id/btn_shop_show"
+            android:layout_toRightOf="@+id/imgvew_photo_show"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="AAAA"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_title3" />
+
+        <Button
+            android:id="@+id/btn_shop_show"
+            style="@style/Btn_Wrap_Red_Text"
+            android:layout_width="70dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/bg_btn01"
+            android:text="进入店铺" />
+    </RelativeLayout>
+
+</RelativeLayout>

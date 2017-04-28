@@ -1,0 +1,107 @@
+<!-- 我的购买订单列表项 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlayout_item_parent_show"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_white" >
+
+    <RelativeLayout
+        android:id="@+id/rlayout_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imgvew_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/icon18"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgvew_photo_show"
+            android:layout_width="@dimen/image_height_small_middle"
+            android:layout_height="@dimen/image_height_small_middle"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/imgvew_select"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_empty_logo_small" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvew_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/rlayout_image"
+        android:background="@color/list_line" />
+
+    <TextView
+        android:id="@+id/tvew_product_name_show"
+        style="@style/EditText_Wrap_Mulity_Black_Text"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="6dip"
+        android:layout_toLeftOf="@+id/llayout_price"
+        android:layout_toRightOf="@+id/rlayout_image"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvew_product_attr_show"
+        style="@style/Text_Wrap_Gray_Text_Sm"
+        android:layout_below="@+id/tvew_product_name_show"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/llayout_price"
+        android:layout_toRightOf="@+id/rlayout_image"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:maxLines="4"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/llayout_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvew_product_now_price_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="￥35" />
+
+        <TextView
+            android:id="@+id/tvew_product_price_show"
+            style="@style/Text_Wrap_Gray_Text"
+            android:layout_marginTop="2dip"
+            android:text="￥100"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvew_product_num_show"
+            style="@style/Text_Wrap_Gray_Text"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="2dip"
+            android:text="x1" />
+
+        <TextView
+            android:id="@+id/tvew_product_commented_show"
+            style="@style/Text_Wrap_Red_Text_Sm"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="2dip"
+            android:text="已评价"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

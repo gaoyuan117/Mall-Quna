@@ -1,0 +1,42 @@
+<!-- 店铺介绍 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <include
+        android:id="@+id/shop_introduce_layout_title"
+        layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/edittxt_shop_introduce_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="编辑店铺介绍"
+            android:inputType="textMultiLine"
+            android:lines="6" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_shop_introduce_save_click"
+        style="@style/Btn_Submit"
+        android:text="保存" />
+
+</LinearLayout>

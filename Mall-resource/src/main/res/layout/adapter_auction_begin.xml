@@ -1,0 +1,48 @@
+<!-- 拍真宝 - 即将开始、马上结束、0元起拍列表项 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:layout_marginTop="5dip"
+    android:background="@drawable/common_edit_bg" >
+
+    <ImageView
+        android:id="@+id/imgvew_photo_show"
+        android:layout_width="@dimen/image_height_small_middle"
+        android:layout_height="@dimen/image_height_small_middle"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dip"
+        android:src="@drawable/img_empty_logo_small" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgvew_photo_show"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip" >
+
+        <TextView
+            android:id="@+id/tvew_product_name_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AAAAAAAAAa"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_title3" />
+
+        <TextView
+            android:id="@+id/tvew_product_now_price_show"
+            style="@style/Text_Wrap_Red_Text_Title2"
+            android:layout_below="@+id/tvew_product_name_show"
+            android:layout_marginTop="10dip"
+            android:text="¥33" />
+
+        <TextView
+            android:id="@+id/tvew_product_status_show"
+            style="@style/Text_Wrap_Gray_Text_Sm"
+            android:layout_below="@+id/tvew_product_now_price_show"
+            android:text="09月24日16:00结束" />
+    </RelativeLayout>
+
+</RelativeLayout>

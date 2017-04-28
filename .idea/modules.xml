@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../commonlibs/AndroidZComponent/AndroidZComponent.iml" filepath="$PROJECT_DIR$/../../commonlibs/AndroidZComponent/AndroidZComponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../commonlibs/AndroidZFramework/AndroidZFramework.iml" filepath="$PROJECT_DIR$/../../commonlibs/AndroidZFramework/AndroidZFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../commonlibs/AndroidZHttp/AndroidZHttp.iml" filepath="$PROJECT_DIR$/../../commonlibs/AndroidZHttp/AndroidZHttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../commonlibs/AndroidZPlayer/AndroidZPlayer.iml" filepath="$PROJECT_DIR$/../../commonlibs/AndroidZPlayer/AndroidZPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../commonlibs/AndroidZQccode/AndroidZQccode.iml" filepath="$PROJECT_DIR$/../../commonlibs/AndroidZQccode/AndroidZQccode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../commonlibs/AndroidZShare/AndroidZShare.iml" filepath="$PROJECT_DIR$/../../commonlibs/AndroidZShare/AndroidZShare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../commonlibs/AndroidZUtils/AndroidZUtils.iml" filepath="$PROJECT_DIR$/../../commonlibs/AndroidZUtils/AndroidZUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../commonlibs/Easeui/Easeui.iml" filepath="$PROJECT_DIR$/../../commonlibs/Easeui/Easeui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mall-Quna.iml" filepath="$PROJECT_DIR$/Mall-Quna.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mall-api/Mall-api.iml" filepath="$PROJECT_DIR$/Mall-api/Mall-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mall-chart/Mall-chart.iml" filepath="$PROJECT_DIR$/Mall-chart/Mall-chart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mall-host/Mall-host.iml" filepath="$PROJECT_DIR$/Mall-host/Mall-host.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mall-provider/Mall-provider.iml" filepath="$PROJECT_DIR$/Mall-provider/Mall-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mall-resource/Mall-resource.iml" filepath="$PROJECT_DIR$/Mall-resource/Mall-resource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easeui/easeui.iml" filepath="$PROJECT_DIR$/easeui/easeui.iml" />
+    </modules>
+  </component>
+</project>

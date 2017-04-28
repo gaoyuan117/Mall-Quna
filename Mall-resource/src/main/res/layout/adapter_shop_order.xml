@@ -1,0 +1,71 @@
+<!-- 我的购买订单列表项 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="8dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dip"
+            android:paddingTop="6dip" >
+
+            <TextView
+                android:id="@+id/tvew_shop_name_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="AAAAAAAAAa"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_title3" />
+
+            <TextView
+                android:id="@+id/tvew_order_status_show"
+                style="@style/Text_Wrap_Red_Text_Title3"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dip"
+                android:text="待付款" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_order_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvew_total_price_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="合计：￥123213" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/gray_white" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="8dip"
+            android:layout_gravity="right"
+            layout="@layout/layout_shop_order_action" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible" >
+
+    <ImageView
+        android:id="@+id/imgvew_photo_show"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/play_controller_play_btn_normal" />
+
+    <TextView
+        android:id="@+id/tvew_title_show"
+        style="@style/Text_Wrap_White_Text_Sm"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_background"
+        android:padding="3dip"
+        android:text="AAAAAAAAAAAAAAAA" />
+
+</RelativeLayout>

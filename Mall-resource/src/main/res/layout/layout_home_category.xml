@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:id="@+id/llayout_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlayout_sort1_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/margin_5"
+                android:drawableTop="@drawable/sort_01"
+                android:gravity="center"
+                android:text="衣"
+                android:textColor="@color/common_btn_text_black_color_selector"
+                android:textSize="@dimen/dimen_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlayout_sort2_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/margin_5"
+                android:drawableTop="@drawable/sort_02"
+                android:gravity="center"
+                android:text="食"
+                android:textColor="@color/common_btn_text_black_color_selector"
+                android:textSize="@dimen/dimen_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlayout_sort3_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/margin_5"
+                android:drawableTop="@drawable/sort_03"
+                android:gravity="center"
+                android:text="住"
+                android:textColor="@color/common_btn_text_black_color_selector"
+                android:textSize="@dimen/dimen_text" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlayout_sort4_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/margin_5"
+                android:drawableTop="@drawable/sort_04"
+                android:gravity="center"
+                android:text="行"
+                android:textColor="@color/common_btn_text_black_color_selector"
+                android:textSize="@dimen/dimen_text" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout_2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="15dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlayout_sort5_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/margin_5"
+                android:drawableTop="@drawable/sort_04"
+                android:gravity="center"
+                android:text="衣"
+                android:textColor="@color/common_btn_text_black_color_selector"
+                android:textSize="@dimen/dimen_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlayout_sort6_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/margin_5"
+                android:drawableTop="@drawable/sort_06"
+                android:gravity="center"
+                android:text="食"
+                android:textColor="@color/common_btn_text_black_color_selector"
+                android:textSize="@dimen/dimen_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlayout_sort7_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/margin_5"
+                android:drawableTop="@drawable/sort_07"
+                android:gravity="center"
+                android:text="需求"
+                android:textColor="@color/common_btn_text_black_color_selector"
+                android:textSize="@dimen/dimen_text" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlayout_sort8_click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/margin_5"
+                android:drawableTop="@drawable/sort_08"
+                android:gravity="center"
+                android:text="其他"
+                android:textColor="@color/common_btn_text_black_color_selector"
+                android:textSize="@dimen/dimen_text" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible" >
+
+    <ImageView
+        android:id="@+id/imgvew_category"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/select_gift_categroy_height"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/llayout_category_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/select_gift_categroy_height"
+        android:layout_centerInParent="true"
+        android:background="#60ffffff" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:src="@drawable/icon18" />
+    </RelativeLayout>
+
+</RelativeLayout>

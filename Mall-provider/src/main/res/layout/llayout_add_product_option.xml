@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dip"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:background="@color/gray_white">
+
+        <TextView
+            android:id="@+id/tvew_option_title_show"
+            style="@style/Text_Wrap_Black_Text_Title3"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="50dip"
+            android:text="重量" />
+
+        <EditText
+            android:id="@+id/edtvew_option_child_name_show"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/EditText_Wrap_Black_Text"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvew_option_add_show"
+            android:background="@drawable/common_edit_bg"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tvew_option_add_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_btn_selector"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="添加属性" />
+    </RelativeLayout>
+
+    <com.android.zcomponent.views.MeasureGridView
+        android:id="@+id/gridview_options_show"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="10dip"
+        android:paddingRight="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/margin_5"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"/>
+
+</LinearLayout>

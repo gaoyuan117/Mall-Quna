@@ -1,0 +1,55 @@
+<!-- 选礼物列表项 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dip"
+    android:background="@drawable/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <ImageButton
+            android:id="@+id/imgvew_select_show"
+            android:layout_width="45dip"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@null"
+            android:src="@drawable/cart_option" />
+
+        <TextView
+            android:id="@+id/tvew_shop_name_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@+id/imgvew_select_show"
+            android:text="天貓超市華北贊" />
+
+        <TextView
+            android:id="@+id/tvew_edit_line_show"
+            style="@style/Text_Wrap_Gray_Text"
+            android:layout_width="0.5dip"
+            android:layout_height="15dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/tvew_edit_show"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/tvew_edit_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_width="45dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:text="编辑" />
+    </RelativeLayout>
+
+</RelativeLayout>

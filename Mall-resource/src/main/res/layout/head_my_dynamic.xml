@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_my_dynamic_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/img_my_dynamic_back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/fanhui2" />
+
+    <ImageView
+        android:id="@+id/img_my_dynamic_gz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/guanzhu" />
+
+    <ImageView
+        android:id="@+id/img_my_dynamic_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="16dp" />
+
+    <com.android.juzbao.view.CircleImageView
+        android:id="@+id/img_my_dynamic_avatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/tv_my_dynamic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_my_dynamic_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="#0ACBB8"
+        android:textSize="16sp" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_my_dynamic_dt"
+        android:layout_below="@+id/img_my_dynamic_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange2"
+        android:text="动态"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        />
+</RelativeLayout>

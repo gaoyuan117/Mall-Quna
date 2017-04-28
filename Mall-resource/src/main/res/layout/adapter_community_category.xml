@@ -1,0 +1,29 @@
+<!-- 社区分类列表项 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dip"
+    android:layout_marginBottom="5dip"
+    android:gravity="center"
+    android:background="@drawable/white"
+    android:orientation="vertical" >
+
+
+    <ImageView
+        android:id="@+id/imgvew_photo_show"
+        android:layout_width="@dimen/image_height_small_middle"
+        android:layout_height="@dimen/image_height_small_middle"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvew_review_title_show"
+        style="@style/Text_Wrap_Black_Text"
+        android:layout_marginLeft="10dip"
+        android:text="AAAAAAAAAAaa" />
+    
+
+</LinearLayout>

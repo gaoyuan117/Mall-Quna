@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JuZbaoProvider</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="address_province_empty">未查询到省份信息</string>
+    <string name="address_city_empty">未查询到城市信息</string>
+    <string name="address_area_empty">未查询到区域信息</string>
+</resources>

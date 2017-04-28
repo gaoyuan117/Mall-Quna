@@ -1,0 +1,160 @@
+<!-- 发货到趣那 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 标题 -->
+    <include 
+        android:id="@+id/shipments_layout_title"
+        layout="@layout/common_title_layout"
+        />
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        >
+        <TextView 
+            style="@style/Text_Wrap_Black_Text"
+            android:text="趣那保真鉴定服务费"
+            android:layout_centerVertical="true"
+            />
+        <TextView 
+            android:id="@+id/tvew_shipments_serve_price_show"
+            style="@style/Text_Wrap_Red_Text"
+            android:text="¥200"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        >
+        <TextView 
+            android:id="@+id/tvew_shipments_addresstitle_tag"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="趣那收货地址:"
+            />
+        <TextView 
+            android:id="@+id/tvew_shipments_name_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="张小明"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvew_shipments_addresstitle_tag"
+            />
+        
+        <TextView 
+            android:id="@+id/tvew_shipments_phone_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="13485786868"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvew_shipments_addresstitle_tag"
+            android:layout_alignParentRight="true"
+            />
+        
+        <TextView 
+            android:id="@+id/tvew_shipments_address_show"
+            style="@style/EditText_Wrap_Black_Text"
+            android:text="山东省济南市中区，财富大厦15层1520室"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tvew_shipments_phone_show"
+            />
+        <TextView 
+            android:id="@+id/tvew_shipments_order_tag"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="订单号 : "
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvew_shipments_address_show"
+            />
+        
+        <TextView 
+            android:id="@+id/tvew_shipments_orderid_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="20125577445555"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvew_shipments_address_show"
+            android:layout_toRightOf="@id/tvew_shipments_order_tag"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView 
+            style="@style/Text_Wrap_Black_Text"
+            android:text="物流公司 : "
+            />
+        <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edittxt_shipments_logistics_company_show"
+            android:background="@null"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView 
+            style="@style/Text_Wrap_Black_Text"
+            android:text="物流单号 : "
+            />
+        <EditText 
+            android:id="@+id/edittxt_shipments_logistics_id_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView 
+            style="@style/Text_Wrap_Black_Text"
+            android:text="上传物流凭证 : "
+            />
+        <ImageView 
+            android:contentDescription="@string/app_name"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivew_shipments_uploding_proof_show"
+            android:scaleType="fitXY"
+            android:background="@drawable/photo_buy_icon"
+            />
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/btn_shipments_click"
+        style="@style/Text_Wrap_White_Text_Title2"
+        android:background="@drawable/login_btn"
+        android:layout_margin="30dp"
+        android:text="发货"
+        />
+</LinearLayout>

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white"
+        android:visibility="gone"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <TextView
+            android:id="@+id/tvew_cart_delivery_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:text="趣那鉴定服务费：" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvew_delivery_price_show"
+                style="@style/Text_Wrap_Red_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tvew_delivery_desc_show"
+                style="@style/Text_Wrap_Gray_Text_Mini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="(卖家包鉴定费)" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dip"
+        android:background="@drawable/white"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <TextView
+            android:id="@+id/tvew_total_count_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dip"
+            android:layout_toLeftOf="@+id/llayout_total_price"
+            android:text="天貓超市華北贊" />
+
+        <LinearLayout
+            android:id="@+id/llayout_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Text_Wrap_Black_Text"
+                android:text="合计：" />
+
+            <TextView
+                android:id="@+id/tvew_total_price_show"
+                style="@style/Text_Wrap_Red_Text_Title3"
+                android:layout_marginRight="10dip"
+                android:text="编辑" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

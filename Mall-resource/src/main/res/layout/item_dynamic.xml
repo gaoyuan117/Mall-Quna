@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dynamic_lv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <com.android.zcomponent.views.CircleImageView
+        android:id="@+id/img_dynamic_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/tv_dynamic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_dynamic_avatar"
+        android:layout_toRightOf="@+id/img_dynamic_avatar"
+        android:text=""
+        android:textColor="#019BCD"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_dynamic_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dynamic_name"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/img_dynamic_avatar"
+        android:text=""
+        android:textColor="@color/black" />
+
+    <com.android.juzbao.view.MyGridView
+        android:id="@+id/gv_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dynamic_content"
+        android:layout_toRightOf="@+id/img_dynamic_avatar"
+        android:numColumns="3" />
+
+    <RelativeLayout
+        android:id="@+id/rl_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dynamic_content"
+        android:layout_toRightOf="@+id/img_dynamic_avatar">
+
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/videocontroller1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/imggg"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

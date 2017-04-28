@@ -1,0 +1,231 @@
+<!-- 设置 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/common_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_title_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/flayout_message_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip">
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/rlayout_my_help1_click"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_write_btn_bg_selector"
+                android:orientation="horizontal"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/Btn_Wrap_Black_Text_Title2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/about01"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Btn_Wrap_Black_Text_Title3"
+                        android:text="物流助手"/>
+
+                    <TextView
+                        style="@style/Text_Wrap_Gray_Text_Sm"
+                        android:layout_marginTop="5dip"
+                        android:text="与您订单相关的物流信息"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rlayout_my_help2_click"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/common_write_btn_bg_selector"
+                android:orientation="horizontal"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip">
+
+                <ImageView
+                    style="@style/Btn_Wrap_Black_Text_Title2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/about02"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Btn_Wrap_Black_Text_Title3"
+                        android:text="交易信息"/>
+
+                    <TextView
+                        style="@style/Text_Wrap_Gray_Text_Sm"
+                        android:layout_marginTop="5dip"
+                        android:text="与您交易订单的相关信息"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rlayout_my_help3_click"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/common_write_btn_bg_selector"
+                android:orientation="horizontal"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip">
+
+                <ImageView
+                    style="@style/Btn_Wrap_Black_Text_Title2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/about03"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Btn_Wrap_Black_Text_Title3"
+                        android:text="通知消息"/>
+
+                    <TextView
+                        style="@style/Text_Wrap_Gray_Text_Sm"
+                        android:layout_marginTop="5dip"
+                        android:text="接收小元的系统通知"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rlayout_my_help4_click"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/common_write_btn_bg_selector"
+                android:orientation="horizontal"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/Btn_Wrap_Black_Text_Title2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/about04"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Btn_Wrap_Black_Text_Title3"
+                        android:text="定时提醒"/>
+
+                    <TextView
+                        style="@style/Text_Wrap_Gray_Text_Sm"
+                        android:layout_marginTop="5dip"
+                        android:text="您设置的上架提醒"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rlayout_my_help5_click"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/common_write_btn_bg_selector"
+                android:orientation="horizontal"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/Btn_Wrap_Black_Text_Title2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/about05"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Btn_Wrap_Black_Text_Title3"
+                        android:text="大众积分活动"/>
+
+                    <TextView
+                        style="@style/Text_Wrap_Gray_Text_Sm"
+                        android:layout_marginTop="5dip"
+                        android:text="接收大众积分各类活动的消息"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rlayout_my_help6_click"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/common_write_btn_bg_selector"
+                android:orientation="horizontal"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip">
+
+                <ImageView
+                    style="@style/Btn_Wrap_Black_Text_Title2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/about06"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Btn_Wrap_Black_Text_Title3"
+                        android:text="客户服务"/>
+
+                    <TextView
+                        style="@style/Text_Wrap_Gray_Text_Sm"
+                        android:layout_marginTop="5dip"
+                        android:text="点击联系小元客服"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

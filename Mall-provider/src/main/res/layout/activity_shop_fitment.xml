@@ -1,0 +1,90 @@
+<!-- 店铺装修 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+    
+    <!-- 标题 -->
+
+    <include
+        android:id="@+id/shop_fitment_layout_title"
+        layout="@layout/common_title_layout" />
+
+    <LinearLayout 
+        android:id="@+id/llayout_shop_fitment_shopicon_click"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:gravity="center_vertical"
+        >
+        <TextView 
+            style="@style/Text_Wrap_Black_Text_Title3"
+            android:text="店铺LOGO"
+            />
+        <View 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            />
+        <com.android.zcomponent.views.CircleImageView
+            android:id="@+id/ivew_shop_fitment_shopicon_show"
+            android:contentDescription="@string/app_name"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/dp_logo"
+            />
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_right_arrow"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    
+   <LinearLayout 
+        android:id="@+id/llayout_shop_fitment_signboard_click"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        style="@style/MyGoodsStyle"
+        android:gravity="center_vertical"
+        >
+        <TextView 
+            style="@style/Text_Wrap_Black_Text_Title3"
+            android:text="店铺招牌"
+            />
+        <View 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            />
+    
+        <ImageView
+            android:id="@+id/ivew_shop_fitment_signboard_show"
+            android:contentDescription="@string/app_name"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@color/red"
+            />
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_right_arrow"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    
+</LinearLayout>

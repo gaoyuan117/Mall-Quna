@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88323232"
+    tools:context="com.android.juzbao.activity.circle.NotifyActivity">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_notify_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示：您同意后将会收到一条含有对方联系方式的短信。"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            >
+            <Button
+                android:id="@+id/bt_notify_cancle"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jujue3"
+                />
+            <Button
+                android:id="@+id/bt_notify_ok"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/queren3"
+                android:layout_marginLeft="32dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

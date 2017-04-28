@@ -1,0 +1,81 @@
+<!-- 选礼物 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/layout_auction_search" />
+    </RelativeLayout>
+
+        <com.android.zcomponent.views.pulltorefresh.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/common_pull_refresh_view_show"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both" >
+        
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/flayout_slider_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image_panel_height_middle" />
+
+                <GridView
+                    android:id="@+id/gvew_gift_category_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:horizontalSpacing="2dip"
+                    android:listSelector="#00000000"
+                    android:numColumns="5"
+                    android:verticalSpacing="2dip" >
+                </GridView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="8dip"
+                    android:paddingLeft="8dip"
+                    android:paddingTop="8dip" >
+
+                    <TextView
+                        style="@style/Text_Wrap_Black_Text_Title3"
+                        android:text="精选礼物" />
+                </RelativeLayout>
+
+                <GridView
+                    android:id="@+id/gvew_gift_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:layout_marginLeft="8dip"
+                    android:listSelector="#00000000"
+                    android:numColumns="2"
+                    android:verticalSpacing="10dip" >
+                </GridView>
+            </LinearLayout>
+    </com.android.zcomponent.views.pulltorefresh.PullToRefreshScrollView>
+
+</LinearLayout>

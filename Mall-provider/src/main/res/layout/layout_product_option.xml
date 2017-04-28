@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llayout_option_click"
+        style="@style/MyGoodsStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_marginRight="5dp"
+            android:text="商品选项 :" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvew_option_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/common_right_arrow"
+            android:text="未编辑"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+</LinearLayout>

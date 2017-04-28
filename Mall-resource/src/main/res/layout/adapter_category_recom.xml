@@ -1,0 +1,70 @@
+<!-- 选礼物列表项 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/white" >
+
+        <ImageView
+            android:id="@+id/imgvew_photo_show"
+            android:layout_width="fill_parent"
+            android:layout_height="145dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_empty_logo_small" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_product_infos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgvew_photo_show"
+            android:paddingBottom="5dip" >
+
+            <TextView
+                android:id="@+id/tvew_product_name_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="8dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="AAAAAAAAAa"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvew_product_price_show"
+                style="@style/Text_Wrap_Gray_Text_Sm"
+                android:layout_below="@+id/tvew_product_name_show"
+                android:layout_marginLeft="5dip"
+                android:textSize="12sp"
+                android:paddingTop="8dp"
+                android:text="￥100" />
+
+            <TextView
+                android:id="@+id/tvew_product_sales_show"
+                style="@style/Text_Wrap_Gray_Text_Sm"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:paddingTop="8dp"
+                android:layout_alignBottom="@+id/tvew_time_title_show"
+                android:layout_marginRight="5dip"
+                android:text="" />
+            
+            <TextView
+                android:id="@+id/tvew_time_title_show"
+                style="@style/Text_Wrap_Red_Text_Title3"
+                android:layout_below="@+id/tvew_product_price_show"
+                android:layout_marginLeft="5dip"
+                android:textSize="12sp"
+                android:text="￥10" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

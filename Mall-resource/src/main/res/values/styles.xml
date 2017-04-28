@@ -1,0 +1,36 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="painc_buy_time">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">3dip</item>
+        <item name="android:textSize">@dimen/dimen_text_mini</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="addreviewRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/add_review_rating_bar</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="MyGoodsStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    
+    <style name="OrderAction" parent="@style/Btn_Wrap_White_Text">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:minWidth">75dp</item>
+        <item name="android:background">@color/red</item>
+    </style>
+
+</resources>

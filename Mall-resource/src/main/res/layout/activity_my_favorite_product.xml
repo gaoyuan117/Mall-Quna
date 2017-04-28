@@ -1,0 +1,26 @@
+<!-- 收藏的商品 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/common_title_layout" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dip"
+        android:layout_below="@+id/title_layout"
+        layout="@layout/common_layout_pulllistview" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dip"
+        android:layout_below="@+id/title_layout"
+        layout="@layout/common_waiting_layout" />
+    
+</RelativeLayout>

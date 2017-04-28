@@ -1,0 +1,323 @@
+<!-- 我的店铺 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/common_bg"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/myshop_layout_title"
+        layout="@layout/common_title_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/llayout_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shop_sign_height"
+        android:layout_below="@+id/myshop_layout_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgvew_signpic_show"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shop_sign_height"
+            android:background="@color/red"
+            android:scaleType="fitXY"/>
+
+        <com.android.zcomponent.views.CircleImageView
+            android:id="@+id/imgvew_shop_logo_show"
+            android:layout_width="@dimen/shop_logo_width"
+            android:layout_height="@dimen/shop_logo_width"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/dp_logo"/>
+
+        <TextView
+            android:id="@+id/tvew_shopname_show"
+            style="@style/Text_Wrap_White_Text_Title2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/imgvew_shop_logo_show"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="D98"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout_money"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/llayout_shop_name"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text_Wrap_Gray_Text"
+                android:text="今日成交总额"/>
+
+            <TextView
+                android:id="@+id/tvew_allmoeny_show"
+                style="@style/Text_Wrap_Black_Text"
+                android:text="¥0.00"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text_Wrap_Gray_Text"
+                android:text="今日访客量"/>
+
+            <TextView
+                android:id="@+id/tvew_visitorcount_show"
+                style="@style/Text_Wrap_Black_Text"
+                android:text="0"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text_Wrap_Gray_Text"
+                android:text="今日订单"/>
+
+            <TextView
+                android:id="@+id/tvew_ordercount_show"
+                style="@style/Text_Wrap_Black_Text"
+                android:text="0"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llayout_money"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llayout_myshop_goods_release_click"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/shj_icon01"/>
+
+                <TextView
+                    style="@style/Btn_Wrap_Black_Text"
+                    android:layout_marginTop="10dp"
+                    android:text="发布宝贝"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_myshop_goods_manage_click"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/shj_icon02"/>
+
+                <TextView
+                    style="@style/Btn_Wrap_Black_Text"
+                    android:layout_marginTop="10dp"
+                    android:text="宝贝管理"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_myshop_order_manage_click"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/shj_icon03"/>
+
+                <TextView
+                    style="@style/Btn_Wrap_Black_Text"
+                    android:layout_marginTop="10dp"
+                    android:text="订单管理"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_myshop_jifen_manager_click"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/shj_icon08"/>
+
+                <TextView
+                    style="@style/Btn_Wrap_Black_Text"
+                    android:layout_marginTop="10dp"
+                    android:text="积分管理"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llayout_manage"
+        android:background="@color/white"
+        android:weightSum="4"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                    android:id="@+id/llayout_myshop_serve_hall_click"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/shj_icon05"/>
+
+                <TextView
+                    style="@style/Btn_Wrap_Black_Text"
+                    android:layout_marginTop="10dp"
+                    android:text="服务大厅"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_myshop_shop_fitment_click"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/shj_icon06"/>
+
+                <TextView
+                    style="@style/Btn_Wrap_Black_Text"
+                    android:layout_marginTop="10dp"
+                    android:text="店铺装修"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_myshop_shop_set_click"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/shj_icon04"/>
+
+                <TextView
+                    style="@style/Btn_Wrap_Black_Text"
+                    android:layout_marginTop="10dp"
+                    android:text="店铺设置"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_myshop_study_click"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/shj_icon07"/>
+
+                <TextView
+                    style="@style/Btn_Wrap_Black_Text"
+                    android:layout_marginTop="10dp"
+                    android:text="小元学院"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/common_waiting_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/myshop_layout_title"/>
+
+</RelativeLayout>

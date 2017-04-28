@@ -1,0 +1,55 @@
+<!-- 评价列表 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg" >
+
+    <include
+        android:id="@+id/find_pwd_rlayout_title"
+        layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/rlayout_action"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        android:layout_below="@+id/find_pwd_rlayout_title"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/tvew_review_best"
+            style="@style/Text_Wrap_Gray_Text"
+            android:layout_height="fill_parent"
+            android:drawableLeft="@drawable/cart_option"
+            android:drawablePadding="10dip"
+            android:text="好评" />
+
+        <TextView
+            android:id="@+id/tvew_review_better"
+            style="@style/Text_Wrap_Gray_Text"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:drawableLeft="@drawable/cart_option"
+            android:drawablePadding="10dip"
+            android:text="中评" />
+
+        <TextView
+            android:id="@+id/tvew_review_bad"
+            style="@style/Text_Wrap_Gray_Text"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:drawableLeft="@drawable/cart_option"
+            android:drawablePadding="10dip"
+            android:text="差评" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlayout_action" >
+
+        <include layout="@layout/common_layout_pulllistview" />
+        
+        <include layout="@layout/common_waiting_layout" />
+    </RelativeLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="select_gift_categroy_height">45dip</dimen>
+    
+    <dimen name="shop_sign_height">120dip</dimen>
+    <dimen name="shop_logo_width">80dip</dimen>
+</resources>

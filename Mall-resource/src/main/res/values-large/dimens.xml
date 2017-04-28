@@ -1,0 +1,10 @@
+<resources>
+
+    <dimen name="personal_head_picture">80dip</dimen>
+    <dimen name="personal_head_bg">110dip</dimen>
+    <dimen name="personal_head_magin_top">65dip</dimen>
+    
+    <dimen name="login_margin_top">80dip</dimen>
+    
+    <dimen name="list_item_height">100dip</dimen>
+</resources>

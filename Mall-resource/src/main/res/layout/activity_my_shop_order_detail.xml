@@ -1,0 +1,381 @@
+<!-- 我的订单详情 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_bg"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/common_title_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="60dip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="15dip"
+                android:paddingLeft="25dip"
+                android:paddingTop="15dip">
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvew_order_short_state"-->
+                <!--style="@style/Text_Wrap_White_Text_Title2"-->
+                <!--android:text="待付款" />-->
+
+                <TextView
+                    android:id="@+id/tvew_order_state"
+                    style="@style/Text_Wrap_White_Text"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="等待买家付款"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_delivery_info_show_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:paddingBottom="15dip"
+                android:paddingLeft="10dip"
+                android:paddingTop="15dip"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgvew_delivery_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/icon20"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/imgvew_delivery_mark"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvew_delivery_state_show"
+                        style="@style/Text_Wrap_Black_Text_Title3"
+                        android:text="您的订单已签收"
+                        android:textColor="#3254ab"/>
+
+                    <TextView
+                        android:id="@+id/tvew_delivery_time_show"
+                        style="@style/Text_Wrap_Gray_Text"
+                        android:layout_marginTop="5dip"
+                        android:text="2015-2-12 11:11:11"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/common_right_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_address_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="15dip"
+                android:paddingLeft="10dip"
+                android:paddingTop="15dip">
+
+                <ImageView
+                    android:id="@+id/tvew_adress_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvew_address_show"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/order_ensure_address_remark"/>
+
+                <TextView
+                    android:id="@+id/tvew_personal_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_toRightOf="@+id/tvew_adress_remark"
+                    />
+
+                <TextView
+                    android:id="@+id/tvew_phone_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    />
+
+                <TextView
+                    android:id="@+id/tvew_address_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_below="@+id/tvew_personal_show"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="5dip"
+                    android:singleLine="false"
+                    android:gravity="left"
+                    tools:text="dsfffffffffffffffffffffffffffffffffffffffffffffffffffffffdsss"
+                    android:layout_toRightOf="@+id/tvew_adress_remark"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="6dip"
+                    android:paddingTop="6dip">
+
+                    <TextView
+                        android:id="@+id/tvew_order_name_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:drawablePadding="5dip"
+                        android:drawableRight="@drawable/common_right_arrow"
+                        android:text="AAAAAAAAAa"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_title3"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llayout_order_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip">
+
+                    <TextView
+                        style="@style/Text_Wrap_Black_Text"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="20dip"
+                        android:text="鉴定费"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dip"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvew_auction_pay_show"
+                            style="@style/Text_Wrap_Black_Text"
+                            android:text="￥123213"/>
+
+                        <TextView
+                            android:id="@+id/tvew_delivery_desc_show"
+                            style="@style/Text_Wrap_Gray_Text_Mini"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dip"
+                            android:text="(卖家包鉴定费)"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- 实付款部分 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip">
+
+                    <TextView
+                        style="@style/Text_Wrap_Black_Text"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="20dip"
+                        android:text="实付款："/>
+
+                    <TextView
+                        android:id="@+id/tvew_total_pay_show"
+                        style="@style/Text_Wrap_Red_Text_Title2"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="20dip"
+                        android:text="￥123213"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingTop="10dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Text_Wrap_Gray_Text"
+                        android:text="订单编号："/>
+
+                    <TextView
+                        android:id="@+id/tvew_order_id_show"
+                        style="@style/Text_Wrap_Gray_Text"
+                        android:text="12321432133421"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llayout_order_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Text_Wrap_Gray_Text"
+                        android:text="支付宝交易号"/>
+
+                    <TextView
+                        android:id="@+id/tvew_order_pay_id_show"
+                        style="@style/Text_Wrap_Gray_Text"
+                        android:layout_marginLeft="2dip"
+                        android:text="12321432133421"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llayout_create_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Text_Wrap_Gray_Text"
+                        android:text="创建时间："/>
+
+                    <TextView
+                        android:id="@+id/tvew_order_time_show"
+                        style="@style/Text_Wrap_Gray_Text"
+                        android:text="2012-10-11 11:11：11"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llayout_pay_time_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Text_Wrap_Gray_Text"
+                        android:text="付款时间："/>
+
+                    <TextView
+                        android:id="@+id/tvew_pay_time_show"
+                        style="@style/Text_Wrap_Gray_Text"
+                        android:text="2012-10-11 11:11：11"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llayout_send_time_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Text_Wrap_Gray_Text"
+                        android:text="发货时间："/>
+
+                    <TextView
+                        android:id="@+id/tvew_send_time_show"
+                        style="@style/Text_Wrap_Gray_Text"
+                        android:text="2012-10-11 11:11：11"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llayout_receive_time_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Text_Wrap_Gray_Text"
+                        android:text="收货时间："/>
+
+                    <TextView
+                        android:id="@+id/tvew_receive_time_show"
+                        style="@style/Text_Wrap_Gray_Text"
+                        android:text="2012-10-11 11:11：11"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvew_order_link_click"
+                style="@style/Btn_Wrap_White_Text_Title3"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="30dip"
+                android:background="@color/red"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip"
+                android:text="联系卖家"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip">
+
+        <include
+            layout="@layout/layout_shop_order_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvew_order_more_review_show_click"
+            style="@style/OrderAction"
+            android:text="查看评价"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

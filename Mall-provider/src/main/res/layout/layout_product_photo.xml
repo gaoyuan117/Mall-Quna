@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="@dimen/image_panel_height_middle"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip" >
+
+        <TextView
+            android:id="@+id/tvew_auction_goods_uploding_click"
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/photo_buy_icon"
+            android:text="上传照片或视频" />
+
+        <LinearLayout
+            android:id="@+id/llayout_photo_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/imgvew_auction_pic1_show"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/image_height_small_middle"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/imgvew_auction_pic2_show"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/image_height_small_middle"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/imgvew_auction_pic3_show"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/image_height_small_middle"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlayout_auction_video_show"
+            android:layout_width="@dimen/image_height_small_middle"
+            android:layout_height="@dimen/image_height_small_middle"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/imgvew_auction_video_show"
+                android:layout_width="@dimen/image_height_small_middle"
+                android:layout_height="@dimen/image_height_small_middle"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/play_controller_play_btn_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

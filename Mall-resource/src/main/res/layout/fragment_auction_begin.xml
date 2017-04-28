@@ -1,0 +1,12 @@
+<!-- 拍真宝 - 即将开始、马上结束、0元起 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_layout_pulllistview" />
+    
+    <include layout="@layout/common_waiting_layout"/>
+
+</RelativeLayout>

@@ -1,0 +1,238 @@
+<!-- 鉴真宝 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg" >
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dip" >
+
+            <include layout="@layout/layout_product_photo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_marginLeft="10dip"
+                    android:text="宝贝名称：" />
+
+                <EditText
+                    android:id="@+id/edittxt_goods_title_show"
+                    style="@style/EditText_Wrap_Black_Text"
+                    android:layout_marginRight="10dip"
+                    android:background="@null"
+                    android:hint="长度大于5个字符"
+                    android:textCursorDrawable="@drawable/editvew_cursor_drawble" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_product_category_click"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="宝贝类目：" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar_categoryz_show"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dip"
+                    android:indeterminate="false"
+                    android:indeterminateDrawable="@drawable/waiting_progress_bg"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvew_product_category_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/common_right_arrow"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_product_num_click"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="数量：" />
+
+                <EditText
+                    android:id="@+id/editvew_product_num_show"
+                    style="@style/EditText_Wrap_Black_Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dip"
+                    android:layout_marginRight="20dip"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/editvew_cursor_drawble" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_product_desc_click"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="宝贝描述：" />
+
+                <TextView
+                    android:id="@+id/editvew_product_desc_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/common_right_arrow"
+                    android:text="未编辑" />
+            </RelativeLayout>
+
+            <include layout="@layout/layout_product_address" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="联系电话：" />
+
+                <EditText
+                    android:id="@+id/editvew_address_phone_show"
+                    style="@style/EditText_Wrap_Black_Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dip"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/editvew_cursor_drawble" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="姓名：" />
+
+                <EditText
+                    android:id="@+id/editvew_address_name_show"
+                    style="@style/EditText_Wrap_Black_Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dip"
+                    android:background="@null"
+                    android:textCursorDrawable="@drawable/editvew_cursor_drawble" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/checkbox_support_show"
+                    style="@style/common_checkbox"
+                    android:layout_marginLeft="15dip"
+                    android:checked="true" />
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_marginLeft="10dip"
+                    android:text="我已阅读并同意" />
+
+                <LinearLayout
+                    android:id="@+id/llayout_distinguish_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Text_Wrap_Black_Text"
+                        android:text="鉴真宝协议"
+                        android:textColor="#24308a" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:background="#24308a" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit_click"
+        style="@style/Btn_Submit"
+        android:layout_alignParentBottom="true"
+        android:text="立即鉴定" />
+
+</RelativeLayout>

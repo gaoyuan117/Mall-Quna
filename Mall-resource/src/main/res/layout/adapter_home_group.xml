@@ -1,0 +1,33 @@
+<!-- 首页 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rlayout_sort1_click"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgvew_group_image_show"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            style="@style/ImageViewStyle"
+            />
+        <TextView
+            android:id="@+id/tvew_group_name_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="衣"
+            android:textColor="@color/common_btn_text_black_color_selector"
+            android:textSize="@dimen/dimen_text" />
+    </LinearLayout>
+
+</RelativeLayout>

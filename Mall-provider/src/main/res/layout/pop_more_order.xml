@@ -1,0 +1,98 @@
+<!-- 我的购买订单列表项 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="right"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvew_auction_show"
+            style="@style/Text_Wrap_White_Text"
+            android:background="@drawable/pop_btn_top_click"
+            android:paddingTop="8dip"
+            android:text="正在鉴定"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/white"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvew_sended_show"
+            style="@style/Text_Wrap_White_Text"
+            android:background="@drawable/pop_btn_center_click"
+            android:paddingTop="8dip"
+            android:text="趣那已发货"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvew_review_show"
+            style="@style/Text_Wrap_White_Text"
+            android:background="@drawable/pop_btn_top_click"
+            android:paddingTop="8dip"
+            android:text="待评价"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvew_complete_show"
+            style="@style/Text_Wrap_White_Text"
+            android:background="@drawable/pop_btn_center_click"
+            android:paddingTop="8dip"
+            android:text="已完成"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvew_close_show"
+            style="@style/Text_Wrap_White_Text"
+            android:background="@drawable/pop_btn_bottom_click"
+            android:paddingTop="8dip"
+            android:text="已关闭"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvew_refund_show"
+            style="@style/Text_Wrap_White_Text"
+            android:background="@drawable/pop_btn_bottom_click"
+            android:paddingTop="8dip"
+            android:text="申请退款"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvew_refunded_show"
+            style="@style/Text_Wrap_White_Text"
+            android:background="@drawable/pop_btn_bottom_click"
+            android:paddingTop="8dip"
+            android:text="已退款"/>
+    </LinearLayout>
+
+</LinearLayout>

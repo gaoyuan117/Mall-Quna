@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_bg"
+            android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/top_title"
+            layout="@layout/common_title_layout"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_title"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="兑换该商品需要消耗"
+                    android:textColor="#ee333333"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tvew_convert_jifen_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="200积分"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="8dp"
+                >
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imgvew_jifen_img"
+                        android:layout_width="105dp"
+                        android:layout_height="80dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_empty_logo_middle"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvew_jifen_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/imgvew_jifen_img"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@id/imgvew_jifen_img"
+                        android:layout_toRightOf="@id/imgvew_jifen_img"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:lineSpacingExtra="2dp"
+                        android:maxLines="2"
+                        android:text="隧道发生的快乐发挥文化岁的卢卡房间里迪斯科解放绿卡时间的了塑料袋解放路卡萨帝景"
+                        android:textColor="#aa333333"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvew_jifen_product_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text="仅剩：100件"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="14dp"
+                    android:background="#eeeeee"/>
+                <LinearLayout
+                    android:id="@+id/llayout_jifen_address_click"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收货人："
+                            android:textColor="#ee333333"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvew_name_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#ee333333"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvew_phone_number_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text=""
+                            android:textColor="#ee333333"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:padding="4dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/potion"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收货地址："
+                            android:textColor="#ee333333"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvew_adress_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#ee333333"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#eeeeee"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="12dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="配送方式："
+                        android:textColor="#ee333333"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tvew_deliver_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="快递   包邮"
+                        android:textColor="#ee333333"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit_click"
+                style="@style/Btn_Submit"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="40dp"
+                android:text="确认兑换"/>
+        </LinearLayout>
+
+        <include layout="@layout/common_waiting_layout"/>
+    </RelativeLayout>
+</ScrollView>

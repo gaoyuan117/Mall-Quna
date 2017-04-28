@@ -1,0 +1,100 @@
+<!-- 评价列表项 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dip"
+    android:background="@drawable/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/llayout_head_picture"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:gravity="center" >
+
+            <com.android.zcomponent.views.CircleImageView
+                android:id="@+id/imgvew_head_picture_show"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:src="@drawable/user_headimg_full"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvew_review_name_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_marginLeft="5dip"
+            android:text="AAAAAAAAAAaa" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvew_review_desc_show"
+        style="@style/Text_Wrap_Black_Text"
+        android:layout_marginLeft="10dip"
+        android:text="AAAAAAAAAAaa" />
+
+    <LinearLayout
+        android:id="@+id/llayout_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgvew_photo1_show"
+            android:layout_width="@dimen/image_height_small"
+            android:layout_height="@dimen/image_height_small"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/img_empty_logo_small" />
+
+        <ImageView
+            android:id="@+id/imgvew_photo2_show"
+            android:layout_width="@dimen/image_height_small"
+            android:layout_height="@dimen/image_height_small"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/img_empty_logo_small" />
+
+        <ImageView
+            android:id="@+id/imgvew_photo3_show"
+            android:layout_width="@dimen/image_height_small"
+            android:layout_height="@dimen/image_height_small"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/img_empty_logo_small" />
+
+        <ImageView
+            android:id="@+id/imgvew_photo4_show"
+            android:layout_width="@dimen/image_height_small"
+            android:layout_height="@dimen/image_height_small"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/img_empty_logo_small" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvew_review_time_show"
+        style="@style/Text_Wrap_Gray_Text_Sm"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:text="" />
+
+</LinearLayout>

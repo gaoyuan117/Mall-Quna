@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_demand_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:padding="10dp"
+            android:text="XX的需求" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <com.android.zcomponent.views.CircleImageView
+                android:id="@+id/img_dialog_demand_detail_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="8dp"
+                android:src="@color/blue" />
+
+            <TextView
+                android:id="@+id/tv_dialog_demand_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_dialog_demand_detail_avatar"
+                android:text="哈哈"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/tv_dialog_demand_detail_hemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_dialog_demand_detail_avatar"
+                android:layout_toRightOf="@+id/img_dialog_demand_detail_avatar"
+                android:text="愿付酬金："
+                android:textColor="#878787" />
+
+            <TextView
+                android:id="@+id/tv_dialog_demand_detail_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_dialog_demand_detail_avatar"
+                android:layout_toRightOf="@+id/tv_dialog_demand_detail_hemoney"
+                android:text=""
+                android:textColor="@color/orange2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_dialog_demand_detail_avatar"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/tv_dialog_demand_detail_money"
+                android:text="元/人"
+                android:textColor="#878787" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有效期限："
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_dialog_demand_detail_deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3天"
+                android:textColor="#B5B5B5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="截止日期："
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_dialog_demand_detail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-2-22"
+                android:textColor="#B5B5B5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邀约地点："
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_dialog_demand_detail_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地点"
+                android:textColor="#B5B5B5" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_dialog_demand_detail_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="填写您的技能优势,增加您的应邀成功率"
+            android:textColorHint="#B5B5B5"
+            android:textSize="14sp"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_dialog_demand_detail_ok"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:background="@color/orange2"
+                android:gravity="center"
+                android:padding="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_dialog_demand_detail_cancle"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="#5A74AD"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

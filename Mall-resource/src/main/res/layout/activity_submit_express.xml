@@ -1,0 +1,146 @@
+<!-- 提交物流凭证 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg" >
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rlayout_express_name_click"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="物流公司：" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar_categoryz_show"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:layout_toLeftOf="@+id/tvew_express_name_show"
+                    android:indeterminate="false"
+                    android:indeterminateDrawable="@drawable/waiting_progress_bg"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvew_express_name_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/common_right_arrow"
+                    android:text="选择物流" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_product_num_click"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="物流单号：" />
+
+                <TextView
+                    android:id="@+id/tvew_express_num_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/common_right_arrow"
+                    android:text="" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_express_photo_click"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvew_select_photo_click"
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dip"
+                    android:padding="15dip"
+                    android:text="上传物流凭证：" />
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/photo_buy_icon" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgvew_photo_show"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/image_panel_height_middle"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <CheckBox
+                    android:id="@+id/checkbox_schedule_show"
+                    style="@style/common_checkbox"
+                    android:layout_marginLeft="15dip"
+                    android:checked="true" />
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_marginLeft="15dip"
+                    android:text="预约快递上门" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit_click"
+        style="@style/Btn_Submit"
+        android:layout_alignParentBottom="true"
+        android:text="确认提交" />
+
+</RelativeLayout>

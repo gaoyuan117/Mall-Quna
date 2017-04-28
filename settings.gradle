@@ -1,0 +1,11 @@
+include ':Mall-host', ':Mall-api', ':Mall-provider', ':Mall-chart', ':Easeui', ':Mall-resource',
+        ':AndroidZFramework', ':AndroidZHttp', ':AndroidZQccode', ':AndroidZUtils',
+        ':AndroidZComponent', ':AndroidZPlayer', ':AndroidZShare'
+project(':AndroidZFramework').projectDir = new File(settingsDir, '../../commonlibs/AndroidZFramework')
+project(':AndroidZHttp').projectDir = new File(settingsDir, '../../commonlibs/AndroidZHttp')
+project(':AndroidZQccode').projectDir = new File(settingsDir, '../../commonlibs/AndroidZQccode')
+project(':AndroidZUtils').projectDir = new File(settingsDir, '../../commonlibs/AndroidZUtils')
+project(':AndroidZComponent').projectDir = new File(settingsDir, '../../commonlibs/AndroidZComponent')
+project(':AndroidZPlayer').projectDir = new File(settingsDir, '../../commonlibs/AndroidZPlayer')
+project(':AndroidZShare').projectDir = new File(settingsDir, '../../commonlibs/AndroidZShare')
+project(':Easeui').projectDir = new File(settingsDir, '../../commonlibs/Easeui')

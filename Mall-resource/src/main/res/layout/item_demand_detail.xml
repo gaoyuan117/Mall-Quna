@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginBottom="4dp"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <com.android.juzbao.view.CircleImageView
+        android:layout_centerVertical="true"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/img_demand_detail_gv_avatar"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="哈哈哈"
+        android:layout_marginTop="2dp"
+        android:id="@+id/tv_demand_detail_gv_name"
+        android:layout_toRightOf="@+id/img_demand_detail_gv_avatar"
+        android:layout_alignTop="@+id/img_demand_detail_gv_avatar"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_demand_detail_gv_avatar"
+        android:layout_alignBottom="@+id/img_demand_detail_gv_avatar"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="技能描述："
+            android:textColor="@color/orange2"
+            />
+        <TextView
+            android:id="@+id/tv_demand_detail_gv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哈哈"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_demand_detail_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="同意"
+        android:textColor="@color/orange2"
+        />
+
+</RelativeLayout>

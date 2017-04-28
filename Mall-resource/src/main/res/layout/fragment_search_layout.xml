@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.zcomponent.views.KeyboardListenRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_by_name_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_title_bg" >
+
+        <TextView
+            android:id="@+id/search_distory_dialog_rlayout_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_back_btn_selector" />
+
+        <RelativeLayout
+            android:id="@+id/search_rlayout_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/search_distory_dialog_rlayout_back" >
+
+            <ImageButton
+                android:id="@+id/search_dialog_btn"
+                android:layout_width="10dip"
+                android:layout_height="45dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/search_shop_btn_selector"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/refresh_progress"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dip"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/custom_waiting_progress_bg"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_search_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@id/search_dialog_btn"
+                android:background="@drawable/shop_search_input"
+                android:hint="请输入搜索关键字"
+                android:paddingLeft="10dip"
+                android:paddingRight="35dip"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/editvew_cursor_drawble"
+                android:textSize="16dip" />
+
+            <ImageButton
+                android:id="@+id/search_bar_clear_input"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@id/search_dialog_btn"
+                android:background="@null"
+                android:src="@drawable/search_bar_clear_btn_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_layout"
+        layout="@layout/common_layout_pullgridview" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="280dip"
+        android:layout_below="@id/top_layout"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_waiting_layout" />
+    </LinearLayout>
+
+</com.android.zcomponent.views.KeyboardListenRelativeLayout>

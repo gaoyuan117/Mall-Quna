@@ -1,0 +1,96 @@
+<!-- 拍真宝-拍精选列表项 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgvew_photo_show"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/image_panel_height_middle"
+        android:background="@color/gray"
+        android:src="@drawable/img_empty_logo_small" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout_product_infos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:layout_below="@+id/imgvew_photo_show" >
+
+        <TextView
+            android:id="@+id/tvew_product_name_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="90dip"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="AAAAAAAAAAAAAAAAaAa"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_title3" />
+
+        <TextView
+            android:id="@+id/tvew_product_category_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_below="@+id/tvew_product_name_show"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="5dip"
+            android:text="乐器石具" />
+
+        <TextView
+            android:id="@+id/tvew_time_title"
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_marginTop="5dip"
+            android:layout_below="@+id/tvew_product_category_show"
+            android:layout_marginLeft="15dip"
+            android:text="距结束" />
+
+        <TextView
+            android:id="@+id/tvew_product_time_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_alignBottom="@+id/tvew_time_title"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@+id/tvew_time_title"
+            android:text="10时12分12秒" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rlayout_product_infos"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginRight="15dip"
+        android:background="#90cd0102"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="8dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="5dip" >
+
+        <TextView
+            android:id="@+id/tvew_product_auction_status_show"
+            style="@style/Text_Wrap_White_Text"
+            android:text="竞拍中" />
+
+        <TextView
+            android:id="@+id/tvew_product_auction_num_show"
+            style="@style/Text_Wrap_White_Text_Title3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dip"
+            android:text="325" />
+
+        <TextView
+            style="@style/Text_Wrap_White_Text"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dip"
+            android:text="次出价" />
+    </LinearLayout>
+
+</RelativeLayout>

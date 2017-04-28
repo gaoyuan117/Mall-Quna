@@ -1,0 +1,56 @@
+<!-- 提现添加银行卡 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/editvew_bank_account_show"
+            style="@style/EditText_Wrap_Black_Text"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:background="@null"
+            android:hint="请输入持卡人姓名"
+            android:textCursorDrawable="@drawable/editvew_cursor_drawble" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="1dip"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/editvew_bank_num_show"
+            style="@style/EditText_Wrap_Black_Text"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:background="@null"
+            android:hint="请输入银行卡号"
+            android:textCursorDrawable="@drawable/editvew_cursor_drawble" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/tvew_submit_click"
+        style="@style/Text_Wrap_White_Text"
+        android:layout_width="match_parent"
+        android:layout_margin="20dip"
+        android:layout_marginTop="30dip"
+        android:background="@color/red"
+        android:paddingBottom="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingRight="@dimen/margin_20"
+        android:paddingTop="@dimen/margin_5"
+        android:text="确认" />
+
+</LinearLayout>

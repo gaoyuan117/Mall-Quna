@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvew_option_title_show"
+        style="@style/Text_Wrap_Black_Text"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="5dip"
+        android:text="重量" />
+
+    <com.android.zcomponent.views.HorizontialListView
+        android:id="@+id/gridview_options_show"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="5dip"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000" >
+    </com.android.zcomponent.views.HorizontialListView>
+
+</LinearLayout>

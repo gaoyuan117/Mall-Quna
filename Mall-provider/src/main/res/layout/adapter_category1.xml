@@ -1,0 +1,23 @@
+<!-- 一级列表项 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llayout_category_bg_show"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dip"
+    android:layout_marginTop="8dip"
+    android:background="@drawable/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvew_review_title_show"
+        style="@style/Text_Wrap_Black_Text"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:text="翡翠" />
+
+</LinearLayout>

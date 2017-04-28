@@ -1,0 +1,58 @@
+<!-- 商品描述 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <include
+        android:id="@+id/product_description_layout_title"
+        layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/edittxt_product_description_input_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入商品描述"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvew_product_description_add_picture_click"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="添加图片"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/dimen_text" />
+
+        <TextView
+            android:id="@+id/tvew_product_description_ok_click"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_text" />
+    </LinearLayout>
+
+</LinearLayout>

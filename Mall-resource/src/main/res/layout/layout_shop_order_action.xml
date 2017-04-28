@@ -1,0 +1,63 @@
+<!-- 我的购买订单列表项 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="5dip"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvew_order_cancel_show_click"
+        style="@style/OrderAction"
+        android:text="取消订单"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvew_order_pay_show_click"
+        style="@style/OrderAction"
+        android:text="立即支付"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tvew_order_del_show_click"
+        style="@style/OrderAction"
+        android:text="删除订单"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvew_order_complete_show_click"
+        style="@style/OrderAction"
+        android:text="查看订单"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvew_order_receiver_show_click"
+        style="@style/OrderAction"
+        android:text="确认收货"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvew_order_receiving_show_click"
+        style="@style/OrderAction"
+        android:text="等待发货"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvew_order_submit_show_click"
+        style="@style/OrderAction"
+        android:text="立即提交"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvew_order_review_show_click"
+        style="@style/OrderAction"
+        android:text="评价"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvew_order_refund_show_click"
+        style="@style/OrderAction"
+        android:text="申请退款"
+        android:visibility="gone"/>
+</LinearLayout>

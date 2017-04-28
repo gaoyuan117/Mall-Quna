@@ -1,0 +1,103 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>停机更新</title>
+<style type="text/css">
+body{
+margin:0px;
+padding:0px;
+
+}
+	.head{
+		 height:150px;
+	}	
+	.head span{
+		 font-size:1.7em;
+		 border:1px soild red;
+		 white-space: nowrap;
+	}
+	.head .image{
+			text-align:center;
+			margin-top:100px;
+			margin-bottom:10px;
+	}
+	.head img {
+			 width:80px;
+			 height:80px;
+	}
+	.head .title{
+			text-align:center;
+			color:red;
+			font-family:微软雅黑;
+			font-weight:blod;
+	}
+	.content{
+			width:100%;
+			height:180px;
+	}
+	.content p{
+		width:280px;
+		margin:0px auto;
+		text-indent: 2em;
+		line-height:35px;
+		font-family:微软雅黑;
+		letter-spacing:1px
+	}
+	.foot{
+		margin-top:20px;
+		width:100%;
+		height:50px;
+	}
+	.foot div{
+		 margin:0px auto; 
+		 width:280px; 
+		 height:40px
+	}
+	.btn{
+		 border:0px;
+		 width:280px;
+		 height:40px;		  
+		 background:url("image/btn.png") no-repeat; 
+		 background-size:100% 120%;
+		 font-family:微软雅黑;
+		 font-size:18px;
+		 letter-spacing:2px;
+		 color:#fff;
+		 filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=
+     'image/btn.png' ,sizingMethod= 'scale' );
+	}
+</style>
+<script type="text/javascript"> 
+function btn(){
+	window.location.href="js-frame://closeWebView"
+}
+	
+</script>
+</head>
+<body>
+	<div class="head">
+		<div class="head">
+			<div class="image">
+				<img src="image/stopping.png"/>
+			</div>
+			<div class="title">
+				<span>停机维护公告</span>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div>
+			<p>
+				为了提供更好的用户体验，我们将进行停机维护，维护有可能提前结束或者推迟，请您耐心等待，如果给您带来不便，敬请谅解！</p>
+		</div>
+	</div>
+	<div class="foot">
+		<div>
+			<button class="btn" onclick="btn()">确定</button>
+		</div>
+	</div>
+</body>
+</html>

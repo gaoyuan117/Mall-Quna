@@ -1,0 +1,136 @@
+<!-- 设置 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/common_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout_my_info_click"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/common_write_btn_bg_selector" >
+
+        <TextView
+            style="@style/Btn_Wrap_Black_Text_Title3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:drawableLeft="@drawable/my_setting_my_info"
+            android:drawablePadding="8dip"
+            android:text="个人资料" />
+
+        <TextView
+            style="@style/Text_Wrap_Gray_Text_Sm"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:drawablePadding="8dip"
+            android:drawableRight="@drawable/common_right_arrow"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_my_account_click"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/rlayout_my_info_click"
+        android:background="@drawable/common_write_btn_bg_selector" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="50dip"
+            android:background="@color/gray" />
+
+        <TextView
+            style="@style/Btn_Wrap_Black_Text_Title3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:drawableLeft="@drawable/my_setting_my_acount"
+            android:drawablePadding="8dip"
+            android:text="账户与安全" />
+
+        <TextView
+            style="@style/Text_Wrap_Gray_Text_Sm"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:drawablePadding="8dip"
+            android:drawableRight="@drawable/common_right_arrow"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_my_message_click"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/rlayout_my_account_click"
+        android:background="@drawable/common_write_btn_bg_selector" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="50dip"
+            android:background="@color/gray" />
+
+        <TextView
+            style="@style/Btn_Wrap_Black_Text_Title3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:drawableLeft="@drawable/set03"
+            android:drawablePadding="8dip"
+            android:text="消息" />
+
+        <TextView
+            style="@style/Text_Wrap_Gray_Text_Sm"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:drawablePadding="8dip"
+            android:drawableRight="@drawable/common_right_arrow"
+            android:text="" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlayout_my_about_click"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/rlayout_my_message_click"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/common_write_btn_bg_selector" >
+
+        <TextView
+            style="@style/Btn_Wrap_Black_Text_Title3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:drawableLeft="@drawable/my_setting_my_about"
+            android:drawablePadding="8dip"
+            android:text="关于小元" />
+
+        <TextView
+            style="@style/Text_Wrap_Gray_Text_Sm"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:drawablePadding="8dip"
+            android:drawableRight="@drawable/common_right_arrow"
+            android:text="" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvew_logout_show"
+        style="@style/Btn_Wrap_White_Text_Title3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red"
+        android:text="退出当前账户"
+        android:visibility="gone" />
+
+</RelativeLayout>

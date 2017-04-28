@@ -1,0 +1,108 @@
+<!-- 抢购会 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <com.android.zcomponent.views.pulltorefresh.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/common_pull_refresh_view_show"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/llayout_time_show"
+        android:orientation="vertical"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/flayout_slider_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_panel_height_small_middle" />
+
+            <RelativeLayout
+                android:id="@+id/llayout_time_end_show"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="2dip"
+                    android:layout_height="match_parent"
+                    android:background="@color/red" />
+
+                <TextView
+                    style="@style/Text_Wrap_Red_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:text="限时限量 疯狂抢购" />
+
+                <TextView
+                    android:id="@+id/tvew_end_time_title_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toLeftOf="@+id/tvew_time_show"
+                    android:text="距离本场结束：" />
+
+                <com.android.zcomponent.views.TimeTextView
+                    android:id="@+id/tvew_time_show"
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ListView
+                    android:id="@+id/common_listview_show"
+                    style="@style/Theme_Scrollbar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@color/list_line"
+                    android:dividerHeight="0.5dip"
+                    android:listSelector="#00000000" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    layout="@layout/common_waiting_layout" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.android.zcomponent.views.pulltorefresh.PullToRefreshScrollView>
+
+    <LinearLayout
+        android:id="@+id/llayout_time_bg_show"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/black"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgvew_time_arrow_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/painc_buy_select_time" />
+
+    <Gallery
+        android:id="@+id/llayout_time_show"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:gravity="center_vertical"
+        android:spacing="10dip" >
+    </Gallery>
+
+</RelativeLayout>

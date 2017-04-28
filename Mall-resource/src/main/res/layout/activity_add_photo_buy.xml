@@ -1,0 +1,151 @@
+<!-- 拍照购 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg" >
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dip" >
+
+            <TextView
+                style="@style/Text_Wrap_Red_Text"
+                android:layout_margin="10dip"
+                android:text="请上传您的需求，需求直达商家，更多报价不买贵" />
+
+            <include layout="@layout/layout_product_photo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_marginLeft="15dip"
+                    android:text="商品标题：" />
+
+                <EditText
+                    android:id="@+id/edittxt_goods_title_show"
+                    style="@style/EditText_Wrap_Black_Text"
+                    android:layout_marginRight="10dip"
+                    android:hint="长度大于5个字符"
+                    android:background="@null"
+                    android:textCursorDrawable="@drawable/editvew_cursor_drawble" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_product_category_click"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="商品分类：" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar_categoryz_show"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dip"
+                    android:indeterminate="false"
+                    android:indeterminateDrawable="@drawable/waiting_progress_bg"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/editvew_product_category_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/common_right_arrow"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_product_price_click"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="价格区间：" />
+
+                <TextView
+                    android:id="@+id/editvew_product_price_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/common_right_arrow"
+                    android:text="" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="10dip"
+                    android:text="商品描述：" />
+
+                <EditText
+                    android:id="@+id/editvew_product_desc_show"
+                    style="@style/EditText_Wrap_Mulity_Black_Text"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dip"
+                    android:paddingTop="10dip"
+                    android:gravity="left|top"
+                    android:background="@null"
+                    android:minLines="5"
+                    android:textCursorDrawable="@drawable/editvew_cursor_drawble" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_release_delivery_day"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit_click"
+        style="@style/Btn_Submit"
+        android:layout_alignParentBottom="true"
+        android:text="立即发布" />
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<!-- 发布商品 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkbox_support_refund_show"
+            style="@style/common_checkbox"
+            android:layout_marginLeft="15dip" />
+
+        <TextView
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_marginLeft="10dip"
+            android:text="支持7天无理由退货" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:layout_marginTop="1dip"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_marginLeft="15dip"
+            android:text="承诺发货时间" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup_day_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/checkbox_one_day_show"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/checkbox_selector"
+                android:drawablePadding="10dp"
+                android:text="24小时"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_text" />
+
+            <RadioButton
+                android:id="@+id/checkbox_two_days_show"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/checkbox_selector"
+                android:drawablePadding="10dp"
+                android:text="48小时"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_text" />
+
+            <RadioButton
+                android:id="@+id/checkbox_three_days_show"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/checkbox_selector"
+                android:drawablePadding="10dp"
+                android:text="72小时"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_text" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.zcomponent.views.KeyboardListenRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg">
+
+    <include
+        android:id="@+id/login_rlayout_title"
+        layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/login_rlayout_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dip">
+
+            <TextView
+                android:id="@+id/tvew_wrong_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dip"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@color/orangered"
+                android:textSize="16dip"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editvew_username_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/input_edit_bg"
+                android:drawableLeft="@drawable/input_mark_phone"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:hint="手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/editvew_cursor_drawble"
+                android:textSize="@dimen/dimen_text" />
+
+            <com.android.zcomponent.views.PasswordTransforEditView
+                android:id="@+id/editvew_password_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="@dimen/margin_10" />
+
+            <Button
+                android:id="@+id/btn_login_click"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@drawable/login_btn"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/common_btn_text_write_color_selector"
+                android:textSize="20dip"></Button>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/rlayout_forget_password_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dip"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="忘记密码?"
+                        android:textColor="#027fb9"
+                        android:textSize="16dip" />
+
+                    <TextView
+                        android:layout_width="70dip"
+                        android:layout_height="0.5dip"
+                        android:layout_marginTop="2dip"
+                        android:background="#027fb9"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llayout_register_click"
+                    android:layout_width="70dip"
+                    android:layout_height="45dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="40dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="注册"
+                        android:textColor="#027fb9"
+                        android:textSize="16dip" />
+
+                    <TextView
+                        android:layout_width="40dip"
+                        android:layout_height="0.5dip"
+                        android:layout_marginTop="2dip"
+                        android:background="#027fb9"
+                        android:gravity="center" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="@dimen/login_margin_top"
+                android:text="第三方账号快速登录"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dimen_text"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="35dip"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tvew_weixin_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="8dip"
+                    android:drawableTop="@drawable/login_weixin_login"
+                    android:gravity="center"
+                    android:text="微信登录"
+                    android:textColor="@color/common_btn_text_black_color_selector"
+                    android:textSize="@dimen/dimen_text"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvew_qq_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="8dip"
+                    android:drawableTop="@drawable/login_qq_login"
+                    android:gravity="center"
+                    android:text="QQ登录"
+                    android:textColor="@color/common_btn_text_black_color_selector"
+                    android:textSize="@dimen/dimen_text"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</com.android.zcomponent.views.KeyboardListenRelativeLayout>

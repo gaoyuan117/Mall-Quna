@@ -1,0 +1,20 @@
+<resources>
+
+    <dimen name="personal_head_picture">60dip</dimen>
+    <dimen name="personal_head_bg">100dip</dimen>
+    <dimen name="personal_head_magin_top">65dip</dimen>
+    
+    <dimen name="login_margin_top">40dip</dimen>
+    
+    <dimen name="list_item_height">100dip</dimen>
+    
+    <dimen name="shop_favorite_item_height">80dip</dimen>
+    
+    <dimen name="refund_input_item_height">38dip</dimen>
+    
+    <dimen name="product_detail_image_height">180dip</dimen>
+    
+    <dimen name="select_gift_categroy_height">40dip</dimen>
+    
+    <dimen name="community_item_image_height">80dip</dimen>
+</resources>

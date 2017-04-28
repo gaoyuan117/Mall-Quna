@@ -1,0 +1,36 @@
+<!-- 评价列表项 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvew_name_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="AAAAAAAAAAaa" />
+
+        <TextView
+            android:id="@+id/tvew_time_show"
+            style="@style/Text_Wrap_Gray_Text"
+            android:layout_marginTop="5dip"
+            android:text="¥1111" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvew_price_show"
+        style="@style/Text_Wrap_Red_Text_Title1"
+        android:layout_marginLeft="40dip"
+        android:layout_gravity="center_vertical"
+        android:text="¥1111" />
+
+</LinearLayout>

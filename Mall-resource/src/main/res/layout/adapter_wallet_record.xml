@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/llayout_price"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvew_name_show"
+            style="@style/Text_Wrap_Mulity_Black"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="AAAAAAAAAAA" />
+
+        <TextView
+            android:id="@+id/tvew_time_show"
+            style="@style/Text_Wrap_Gray_Text_Sm"
+            android:layout_marginTop="5dip"
+            android:text="¥1111" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvew_price_show"
+            style="@style/Text_Wrap_Red_Text_Title2"
+            android:text="¥1111" />
+
+        <TextView
+            android:id="@+id/tvew_status_show"
+            style="@style/Text_Wrap_Gray_Text_Sm"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dip"
+            android:text="¥1111" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,268 @@
+<!-- 拍品详情 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg" >
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/common_title_layout" />
+
+    <com.android.zcomponent.views.CustomScrollView
+        style="@style/Theme_Scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="50dip" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/flayout_slider_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image_panel_height_big" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/tvew_acution_status_show"
+                        style="@style/Text_Wrap_Black_Text"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dip"
+                        android:text="正在进行" />
+
+                    <TextView
+                        android:id="@+id/tvew_acution_endtime_show"
+                        style="@style/Text_Wrap_Black_Text"
+                        android:layout_centerInParent="true"
+                        android:text="10月30好23点结束" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/tvew_product_name_show"
+                    style="@style/EditText_Wrap_Mulity_Black_Text"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:text="翠翡翠翠翡翠翡翠翡翠翡翠翡翠翡翠翡翠翡翠" />
+
+                <TextView
+                    android:id="@+id/tvew_product_price_title"
+                    style="@style/Text_Wrap_Black_Text_Sm"
+                    android:layout_below="@+id/tvew_product_name_show"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="8dip"
+                    android:text="当前价" />
+
+                <TextView
+                    android:id="@+id/tvew_product_price_show"
+                    style="@style/Text_Wrap_Red_Text_Title2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@+id/tvew_product_price_title"
+                    android:text="￥1000" />
+
+                <TextView
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dip"
+                    android:layout_toLeftOf="@+id/tvew_product_now_price_show"
+                    android:text="一口价" />
+
+                <TextView
+                    android:id="@+id/tvew_product_now_price_show"
+                    style="@style/Text_Wrap_Gray_Title2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvew_bond_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="保证金 ￥500" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_product_params_click"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text_Title3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="查看拍品参数" />
+
+                <TextView
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/common_right_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_product_acution_num_click"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvew_auction_count_show"
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="出价记录(0)" />
+
+                <TextView
+                    android:id="@+id/editvew_acution_num_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/common_right_arrow"
+                    android:text="全部" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_product_desc_click"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvew_start_price_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="起拍价 ￥1000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_acution_service_click"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="服务保障" />
+
+                <TextView
+                    android:id="@+id/tvew_acution_service_show"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/common_right_arrow" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvew_product_qi_show"
+                style="@style/Text_Wrap_Black_Text"
+                android:layout_marginLeft="18dip"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/product_detail_icon_qi"
+                android:drawablePadding="5dip"
+                android:text="七天无理由退换货" />
+
+            <RelativeLayout
+                android:id="@+id/rlayout_auction_notice_click"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="保证金须知" />
+
+                <TextView
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/common_right_arrow" />
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/webview_product_detail_show"
+                style="@style/Theme_Scrollbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.android.zcomponent.views.CustomScrollView>
+
+    <Button
+        android:id="@+id/btn_submit_click"
+        style="@style/Btn_Submit"
+        android:layout_alignParentBottom="true"
+        android:text="报名提交保证金" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        layout="@layout/common_waiting_layout" />
+
+</RelativeLayout>

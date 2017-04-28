@@ -1,0 +1,104 @@
+<!-- 分类 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip">
+
+        <RelativeLayout
+            android:id="@+id/rlayout_search_click"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:background="#80a5a5a5">
+
+            <TextView
+                android:id="@+id/editvew_search_show"
+                style="@style/Text_Wrap_Black_Text"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="10dip"
+                android:background="@null"
+                android:drawableLeft="@drawable/home_search_icon"
+                android:drawablePadding="5dip"
+                android:hint="搜索"
+                android:singleLine="true"
+                android:textColorHint="#d7d3cf"
+                android:textCursorDrawable="@drawable/editvew_cursor_drawble"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@color/white">
+
+            <ExpandableListView
+                android:id="@+id/common_listview_show"
+                style="@style/Theme_Scrollbar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/list_line"
+                android:dividerHeight="0.5dip"
+                android:listSelector="#00000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dip"
+            android:layout_weight="0.25"
+            android:background="@color/gray_white"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/flayout_slider_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_panel_height_small_middle"
+                />
+
+            <TextView
+                android:id="@+id/tvew_category_name"
+                style="@style/Text_Wrap_Red_Text"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:text=""
+                android:visibility="gone"/>
+
+            <FrameLayout
+                android:id="@+id/flayout_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                >
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/common_waiting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"/>
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.zcomponent.views.KeyboardListenRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg" >
+
+    <include
+        android:id="@+id/register_rlayout_title"
+        layout="@layout/common_title_layout" />
+
+    <ScrollView
+        style="@style/Theme_Scrollbar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/register_rlayout_title" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvew_wrong_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dip"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@color/orangered"
+                android:textSize="16dip"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editvew_phone_number_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/input_edit_bg"
+                android:drawableLeft="@drawable/input_mark_phone"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:hint="手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="10dip"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/editvew_cursor_drawble"
+                android:textSize="@dimen/dimen_text" />
+
+            <EditText
+                android:id="@+id/editvew_nick_name_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/input_edit_bg"
+                android:drawableLeft="@drawable/input_mark_account"
+                android:drawablePadding="10dip"
+                android:gravity="center_vertical"
+                android:hint="昵称"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="10dip"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/editvew_cursor_drawble"
+                android:textSize="@dimen/dimen_text" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <EditText
+                    android:id="@+id/editvew_code_show"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/input_edit_bg"
+                    android:drawablePadding="10dip"
+                    android:gravity="center_vertical"
+                    android:hint="输入验证码"
+                    android:inputType="number"
+                    android:paddingLeft="10dip"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/editvew_cursor_drawble"
+                    android:textSize="@dimen/dimen_text" />
+
+                <FrameLayout
+                    android:id="@+id/flayout_get_captcha"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dip"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingLeft="3dip"
+                    android:paddingRight="3dip" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register_click"
+                android:layout_width="match_parent"
+                android:layout_height="52dip"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="13dip"
+                android:background="@drawable/login_btn"
+                android:gravity="center"
+                android:text="绑定"
+                android:textColor="@color/common_btn_text_write_color_selector"
+                android:textSize="20dip" >
+            </Button>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</com.android.zcomponent.views.KeyboardListenRelativeLayout>

@@ -1,0 +1,147 @@
+<!-- 选择商品 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <include
+        android:id="@+id/select_commodity_layout_title"
+        layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/llayout_select_commodity_all_click"
+        style="@style/MyGoodsStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/check_select_commodity_all_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/common_checkbox_uncheck"
+            android:drawablePadding="10dp"
+            android:text="全选"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout_select_commodity_title_one_click"
+        style="@style/MyGoodsStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/check_select_commodity_title_one_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/common_checkbox_uncheck"
+            android:drawablePadding="10dp"
+            android:text="商品1标题 "
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text" />
+
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/llayout_select_commodity_title_two_click"
+        style="@style/MyGoodsStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/check_select_commodity_title_two_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/common_checkbox_uncheck"
+            android:drawablePadding="10dp"
+            android:text="商品2标题 "
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text" />
+
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:id="@+id/llayout_select_commodity_title_three_click"
+        style="@style/MyGoodsStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/check_select_commodity_title_three_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/common_checkbox_uncheck"
+            android:drawablePadding="10dp"
+            android:text="商品3标题 "
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text" />
+
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/llayout_select_commodity_title_four_click"
+        style="@style/MyGoodsStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/check_select_commodity_title_four_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/common_checkbox_uncheck"
+            android:drawablePadding="10dp"
+            android:text="商品4标题 "
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text" />
+
+    </LinearLayout>
+    
+    
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_select_commodity_oksubmit_click"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/red"
+        android:text="确认提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_title3" />
+
+</LinearLayout>

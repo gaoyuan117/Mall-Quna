@@ -1,0 +1,137 @@
+<!-- 宝贝管理子项 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivew_adapter_goods_icon_show"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_empty_logo_small"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvew_adapter_goods_name_show"
+                style="@style/EditText_Wrap_Black_Text"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/tvew_adapter_goods_price_show"
+                style="@style/Text_Wrap_Red_Text"
+                android:layout_marginTop="3dp"
+                android:text="¥ 66"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="invisible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvew_adapter_goods_sell_num"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:text="已售0"/>
+
+                <TextView
+                    android:id="@+id/tvew_adapter_goods_warehouse_num"
+                    style="@style/Text_Wrap_Gray_Text"
+                    android:layout_marginLeft="30dp"
+                    android:text="库存0"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvew_adapter_goods_edit_click"
+            style="@style/Text_Wrap_Black_Text_Title3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="编辑宝贝"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tvew_adapter_goods_upordown"
+            style="@style/Text_Wrap_Black_Text_Title3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="上架"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvew_adapter_goods_share"
+            style="@style/Text_Wrap_Black_Text_Title3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="分享"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/vew_adapter_share_lin"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tvew_adapter_goods_delete"
+            style="@style/Text_Wrap_Black_Text_Title3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="删除"/>
+    </LinearLayout>
+
+</LinearLayout>

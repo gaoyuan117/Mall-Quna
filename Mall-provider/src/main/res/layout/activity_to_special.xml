@@ -1,0 +1,96 @@
+<!-- 发布到专题 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <include
+        android:id="@+id/to_special_layout_title"
+        layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/to_special_layout_title"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llayout_to_special_qianggou_click"
+            style="@style/MyGoodsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/check_to_special_qiang_click"
+                style="@style/common_checkbox" />
+
+            <TextView
+                style="@style/Text_Wrap_Black_Text"
+                android:layout_marginLeft="15dip"
+                android:text="抢购会 : " />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/TextView_RightArrow" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_to_special_liwu_click"
+            style="@style/MyGoodsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/check_to_special_xuan_click"
+                style="@style/common_checkbox" />
+
+            <TextView
+                style="@style/Text_Wrap_Black_Text"
+                android:layout_marginLeft="15dip"
+                android:text="选礼物 : " />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/progressbar_categoryz_show"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_marginRight="10dip"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/waiting_progress_bg"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvew_gift_category"
+                style="@style/TextView_RightArrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_to_special_ok_click"
+        style="@style/Btn_Submit"
+        android:layout_alignParentBottom="true"
+        android:text="确认" />
+
+</RelativeLayout>

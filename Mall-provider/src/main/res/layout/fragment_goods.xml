@@ -1,0 +1,65 @@
+<!-- 我的购买订单列表 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg" >
+
+    <LinearLayout
+        android:id="@+id/llayout_putong_goods_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbtn_goods_manage_sell_click"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radiobtn_selectbg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="已发布( 0 )"
+                android:textColor="@color/checkbox_color_selector"
+                android:textSize="@dimen/dimen_text" />
+
+            <RadioButton
+                android:id="@+id/rbtn_goods_manage_warehouse_click"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radiobtn_selectbg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="待发布( 0 )"
+                android:textColor="@color/checkbox_color_selector"
+                android:textSize="@dimen/dimen_text" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout 
+        android:id="@+id/flayout_putaway"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llayout_putong_goods_type">
+        
+    </FrameLayout>
+    
+    <FrameLayout 
+        android:id="@+id/flayout_halt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llayout_putong_goods_type">
+        
+    </FrameLayout>
+
+</RelativeLayout>

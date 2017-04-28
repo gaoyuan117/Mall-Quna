@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="select_gift_categroy_height">45dip</dimen>
+
+    <dimen name="shop_sign_height">120dip</dimen>
+    <dimen name="shop_logo_width">80dip</dimen>
+</resources>

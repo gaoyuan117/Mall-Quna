@@ -1,0 +1,54 @@
+<!-- 收藏商品列表项 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white" >
+
+    <Button
+        android:id="@+id/favorite_del"
+        android:layout_width="50dip"
+        android:layout_height="@dimen/image_height_middle"
+        android:layout_centerVertical="true"
+        android:background="@color/red"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_text"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgvew_photo_show"
+        android:layout_width="@dimen/image_height_middle"
+        android:layout_height="@dimen/image_height_middle"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dip"
+        android:layout_toRightOf="@+id/favorite_del"
+        android:src="@drawable/img_empty_logo_small" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_toRightOf="@+id/imgvew_photo_show" >
+
+        <TextView
+            android:id="@+id/tvew_product_name_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="AAAAAAAAAa"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_title3" />
+
+        <TextView
+            android:id="@+id/tvew_product_now_price_show"
+            style="@style/Text_Wrap_Red_Text_Title2"
+            android:layout_below="@+id/tvew_product_name_show"
+            android:layout_marginTop="35dip"
+            android:text="¥33" />
+    </RelativeLayout>
+
+</RelativeLayout>

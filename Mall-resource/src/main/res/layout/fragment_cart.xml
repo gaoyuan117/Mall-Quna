@@ -1,0 +1,71 @@
+<!-- 购物车 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlayout_action" >
+
+        <ExpandableListView
+            android:id="@+id/common_listview_show"
+            style="@style/Theme_Scrollbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/list_line"
+            android:dividerHeight="0.5dip"
+            android:listSelector="#00000000" />
+
+        <include layout="@layout/common_waiting_layout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_action"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tvew_select_show_click"
+            style="@style/Text_Wrap_Gray_Text"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:drawableLeft="@drawable/cart_option"
+            android:drawablePadding="10dip"
+            android:text="全选" />
+
+        <TextView
+            android:id="@+id/tvew_settle_show_click"
+            style="@style/Btn_Wrap_White_Text_Title3"
+            android:layout_width="100dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/red"
+            android:text="支付" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/tvew_settle_show_click"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvew_total_money_show"
+                style="@style/Text_Wrap_Black_Text_Title3"
+                android:layout_marginTop="3dip"
+                android:text="合计:￥0" />
+
+            <TextView
+                style="@style/Text_Wrap_Gray_Text_Sm"
+                android:layout_gravity="right"
+                android:layout_marginTop="2dip"
+                android:text="不含运费" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

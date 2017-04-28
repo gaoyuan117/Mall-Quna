@@ -1,0 +1,122 @@
+<!-- 选择分类 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <include
+        android:id="@+id/select_category_layout_title"
+        layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/llayout_select_one_click"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/ivew_category_one_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="金银饰品" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout_select_two_click"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/ivew_category_two_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="名贵宝石珠宝" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout_select_three_click"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/ivew_category_three_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="有机宝石珠宝" />
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:id="@+id/llayout_select_four_click"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/ivew_category_four_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="彩色宝石珠宝" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/llayout_select_five_click"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/ivew_category_five_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="文玩收藏" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/llayout_select_six_click"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/ivew_category_six_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="文玩配饰" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/llayout_select_seven_click"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/ivew_category_seven_show"
+            style="@style/Text_Wrap_Black_Text"
+            android:text="玉石翡翠" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../../commonlibs/AndroidZComponent" />
+            <option value="$PROJECT_DIR$/../../commonlibs/AndroidZFramework" />
+            <option value="$PROJECT_DIR$/../../commonlibs/AndroidZHttp" />
+            <option value="$PROJECT_DIR$/../../commonlibs/AndroidZPlayer" />
+            <option value="$PROJECT_DIR$/../../commonlibs/AndroidZQccode" />
+            <option value="$PROJECT_DIR$/../../commonlibs/AndroidZShare" />
+            <option value="$PROJECT_DIR$/../../commonlibs/AndroidZUtils" />
+            <option value="$PROJECT_DIR$/../../commonlibs/Easeui" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Mall-api" />
+            <option value="$PROJECT_DIR$/Mall-chart" />
+            <option value="$PROJECT_DIR$/Mall-host" />
+            <option value="$PROJECT_DIR$/Mall-provider" />
+            <option value="$PROJECT_DIR$/Mall-resource" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

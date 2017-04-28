@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.zcomponent.views.KeyboardListenRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/find_pwd_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg" >
+
+    <include
+        android:id="@+id/find_pwd_rlayout_title"
+        layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/find_pwd_rlayout_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvew_wrong_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dip"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@color/orangered"
+                android:textSize="16dip"
+                android:visibility="gone" />
+
+            <com.android.zcomponent.views.PasswordTransforEditView
+                android:id="@+id/editvew_password_old_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="@dimen/margin_10" />
+
+            <com.android.zcomponent.views.PasswordTransforEditView
+                android:id="@+id/editvew_password_new_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="@dimen/margin_10" />
+
+            <com.android.zcomponent.views.PasswordTransforEditView
+                android:id="@+id/editvew_password_confirm_show"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="@dimen/margin_10" />
+
+            <Button
+                android:id="@+id/btn_register_click"
+                android:layout_width="fill_parent"
+                android:layout_height="52dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="30dip"
+                android:background="@drawable/login_btn"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/common_btn_text_write_color_selector"
+                android:textSize="20dip" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</com.android.zcomponent.views.KeyboardListenRelativeLayout>

@@ -1,0 +1,73 @@
+<!-- 分类 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@color/white" >
+
+            <ExpandableListView
+                android:id="@+id/common_listview_show"
+                style="@style/Theme_Scrollbar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/list_line"
+                android:dividerHeight="0.5dip"
+                android:listSelector="#00000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="0.25"
+            android:background="@color/gray_white"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/flayout_slider_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_panel_height_small_middle"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip" />
+
+            <TextView
+                android:id="@+id/tvew_category_name"
+                style="@style/Text_Wrap_Red_Text"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:visibility="gone"
+                android:text="" />
+
+            <GridView
+                android:id="@+id/gvew_category_2_show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:cacheColorHint="#00000000"
+                android:horizontalSpacing="10dip"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:verticalSpacing="10dip" >
+            </GridView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

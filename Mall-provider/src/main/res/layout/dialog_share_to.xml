@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/Text_Wrap_Black_Text_Title2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:text="分享到" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/llayout_share_community_click"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share01" />
+
+            <TextView
+                style="@style/Btn_Wrap_Black_Text_Title2"
+                android:layout_marginTop="10dp"
+                android:text="社区" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_share_qq_click"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share02" />
+
+            <TextView
+                style="@style/Btn_Wrap_Black_Text_Title2"
+                android:layout_marginTop="10dp"
+                android:text="QQ" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_share_weixin_click"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/share03" />
+
+            <TextView
+                style="@style/Btn_Wrap_Black_Text_Title2"
+                android:layout_marginTop="20dp"
+                android:text="微信" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

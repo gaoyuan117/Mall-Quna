@@ -1,0 +1,52 @@
+<!-- 拍真宝 - 拍卖精选 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:paddingBottom="8dip"
+    android:paddingTop="8dip" >
+
+    <ImageButton
+        android:id="@+id/tvew_scan_click"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:src="@drawable/auction_menu" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout_search_click"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_toRightOf="@+id/tvew_scan_click"
+        android:background="#80a5a5a5" >
+
+        <ImageView
+            android:id="@+id/imgvew_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/home_search_icon" />
+
+        <TextView
+            android:id="@+id/editvew_search_show"
+            style="@style/EditText_Wrap_White_Text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/imgvew_search_icon"
+            android:background="@null"
+            android:hint="搜索拍卖宝贝"
+            android:singleLine="true"
+            android:textColorHint="#d7d3cf"
+            android:textCursorDrawable="@drawable/editvew_cursor_drawble" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

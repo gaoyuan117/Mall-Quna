@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/imgvew_jifen_img"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_empty_logo_middle"
+        />
+
+    <TextView
+        android:id="@+id/tvew_jifen_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imgvew_jifen_img"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/imgvew_jifen_img"
+        android:layout_toRightOf="@id/imgvew_jifen_img"
+        android:ellipsize="end"
+        android:gravity="top|start"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="2"
+        android:lines="2"
+        android:text=""
+        android:textColor="#aa333333"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tvew_jifen_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvew_jifen_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/imgvew_jifen_img"
+        android:layout_toRightOf="@id/imgvew_jifen_img"
+        android:text="100"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tvew_jifen_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imgvew_jifen_img"
+        android:layout_below="@id/tvew_jifen_number"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@id/imgvew_jifen_img"
+        android:layout_toRightOf="@id/imgvew_jifen_img"
+        android:text="剩余100件"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        />
+
+    <Button
+        android:id="@+id/btn_jifen_convert_click"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:text="立即兑换"
+        style="@style/OrderAction"
+        />
+
+</RelativeLayout>

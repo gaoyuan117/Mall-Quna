@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/common_title_layout" />
+
+    <ScrollView
+        style="@style/Theme_Scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llayout_add_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvew_option_add_show"
+                    style="@style/Text_Wrap_Black_Text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@drawable/common_btn_selector"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="添加选项"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/edtvew_option_name_show"
+                    style="@style/EditText_Wrap_Black_Text"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_edit_bg"
+                    android:hint="选项名称"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_product_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvew_price_add_show"
+                        style="@style/Text_Wrap_Black_Text"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginRight="15dip"
+                        android:background="@drawable/common_btn_selector"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:text="添加价格"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edtvew_price_name_show"
+                        style="@style/EditText_Wrap_Black_Text"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/common_edit_bg"
+                        android:hint="价格"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp" />
+
+                </LinearLayout>
+
+                <com.android.zcomponent.views.MeasureGridView
+                    android:id="@+id/gridview_price_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:paddingRight="10dp"
+                    android:verticalSpacing="@dimen/margin_5"
+                    android:numColumns="2"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="#00000000">
+
+                </com.android.zcomponent.views.MeasureGridView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

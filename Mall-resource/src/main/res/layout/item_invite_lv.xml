@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <com.android.zcomponent.views.CircleImageView
+        android:id="@+id/img_invite_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_invite_heneed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_invite_avatar"
+        android:text="他的需求："
+        android:textColor="#878787" />
+
+    <TextView
+        android:id="@+id/tv_invite_need"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_invite_heneed"
+        android:text=""
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_invite_hecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_invite_need"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/img_invite_avatar"
+        android:text="需求人数："
+        android:textColor="#878787" />
+
+    <TextView
+        android:id="@+id/tv_invite_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="发布中"
+        android:textColor="#878787" />
+
+    <TextView
+        android:id="@+id/tv_invite_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_invite_need"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/tv_invite_hecount"
+        android:text=""
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_invite_hemoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_invite_hecount"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/img_invite_avatar"
+        android:text="愿付酬金："
+        android:textColor="#878787" />
+
+    <TextView
+        android:id="@+id/tv_invite_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_invite_hecount"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/tv_invite_hemoney"
+        android:text=""
+        android:textColor="@color/orange2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="元/人"
+        android:textColor="#878787"
+        android:layout_below="@+id/tv_invite_hecount"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/tv_invite_money"
+        />
+
+    <TextView
+        android:id="@+id/tv_invite_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_invite_hemoney"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/img_invite_avatar"
+        android:background="#efefef"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text=""
+        android:textColor="#979797" />
+
+    <TextView
+        android:id="@+id/tv_invite_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_invite_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/img_invite_avatar"
+        android:text=""
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_invite_inviter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_invite_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/img_invite_avatar"
+        android:drawableLeft="@drawable/yinyao"
+        android:drawablePadding="4dp"
+        android:text=""
+        android:textColor="#b6b6b6" />
+
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<!-- 我的钱包 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/tvew_wallet_amount_show"
+            style="@style/Text_Wrap_Red_Text_Title1"
+            android:text="￥200" />
+
+        <TextView
+            style="@style/Text_Wrap_Black_Text_Sm"
+            android:layout_marginTop="2dip"
+            android:text="账户余额" />
+
+        <TextView
+            android:id="@+id/tvew_redraw_click"
+            style="@style/Text_Wrap_White_Text"
+            android:layout_marginTop="30dip"
+            android:background="@color/red"
+            android:paddingBottom="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_5"
+            android:text="提现" />
+
+        <TextView
+            android:id="@+id/tvew_recharge_click"
+            style="@style/Text_Wrap_White_Text"
+            android:layout_marginTop="20dip"
+            android:background="@color/red"
+            android:paddingBottom="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_5"
+            android:text="充值" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/white" >
+
+        <TextView
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:text="拍卖冻结" />
+
+        <TextView
+            android:id="@+id/tvew_wallet_freeze_amount_show"
+            style="@style/Text_Wrap_Red_Text_Title2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:text="￥100" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_out_record_click"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/white" >
+
+        <TextView
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:text="支出明细" />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/common_right_arrow" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlayout_in_record_click"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/white" >
+
+        <TextView
+            style="@style/Text_Wrap_Black_Text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:text="收入明细" />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/common_right_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

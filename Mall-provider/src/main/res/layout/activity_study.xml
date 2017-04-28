@@ -1,0 +1,86 @@
+<!-- 趣那学院 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 标题 -->
+
+    <include
+        android:id="@+id/study_layout_title"
+        layout="@layout/common_title_layout" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlayout_study_question_show"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/tvew_question_name_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="课程问题"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dimen_title3" />
+
+            <ImageView
+                android:id="@+id/ivew_question_line_show"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/red" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlayout_study_move_show"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/tvew_move_name_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="课程视频"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_title3" />
+
+            <ImageView
+                android:id="@+id/ivew_move_line_show"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white"
+        />
+    <GridView 
+        android:id="@+id/gvew_study_moves_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="none"
+        android:listSelector="#00000000"
+        />
+</LinearLayout>

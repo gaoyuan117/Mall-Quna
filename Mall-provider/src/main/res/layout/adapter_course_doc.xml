@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:visibility="visible" >
+
+    <TextView
+        android:id="@+id/tvew_title_show"
+        style="@style/Text_Wrap_Black_Text_Title3"
+        android:text="AAAAAAAAAAa" />
+
+    <TextView
+        android:id="@+id/tvew_time_show"
+        style="@style/Text_Wrap_Gray_Text_Sm"
+        android:text="2016-01-11 12:11" />
+
+</LinearLayout>
